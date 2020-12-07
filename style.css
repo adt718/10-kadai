@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "step-box";
+  display: block;
+  clear: both;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff9a4b;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #aaaaaa;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main {
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.title {
+  margin: 15px;
+  margin-bottom: 5px;
+  position: relative;
+  left: -15px;
+}
+.step-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #eeeeee;
+}
+.step-img1 {
+  background-image: url("img/flow01.png");
+  width: 280px;
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+.step-img2 {
+  background-image: url("img/flow02.png");
+  width: 280px;
+  height: 150px;
+  background-position: bottom 30% right 40%;
+  background-size: 100%;
+}
+.step-img3 {
+  background-image: url("img/flow03.png");
+  width: 280px;
+  height: 150px;
+  background-size: 100%;
+  background-position: right 150px;
+}
+.step-box1 {
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+  background-color: #eeeeee;
+  position: relative;
+}
+
+.step-box2 {
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: #eeeeee;
+  position: relative;
+}
+.step-box3 {
+  width: 300px;
+  margin: 20px;
+  background-color: #eeeeee;
+  position: relative;
+  padding: 10px;
+}
+
+.header-top {
+  width: 100%;
+  height: 50px;
+  background-color: #eeeeee;
+}
+
+.header-bottom {
+  width: 100%;
+  height: 50px;
+  background-color: #ff9a4f;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    flex-direction: column;
+  }
+  .step-box1 {
+    width: 90%;
+  }
+  .step-box2 {
+    width: 90%;
+  }
+  .step-box3 {
+    width: 90%;
+  }
+}
